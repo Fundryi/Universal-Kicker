@@ -1,4 +1,5 @@
 import hikari
+import time
 from hikari.api.interaction_server import Response
 import lightbulb
 from hikari.guilds import Guild, Role
@@ -25,7 +26,7 @@ async def on_start(event):
 
 @bot.command
 @lightbulb.option('role', 'All users that are in this group will be kicked!', type=Role)
-@lightbulb.command('role_kick', 'Kicks all users in a specific role.')
+@lightbulb.command('kk', 'Kicks all users in a specific role.')
 @lightbulb.implements(lightbulb.SlashCommand)
 async def MassKick(ctx):
     for member in ctx.get_guild().get_members().values():
@@ -36,5 +37,6 @@ async def MassKick(ctx):
             kickedRole = ctx.options.role.mention
 
             await ctx.respond(f'The User {memberID} is being kicked because he is in the role {kickedRole}!')
+            time.sleep(2)
 
 bot.run()
