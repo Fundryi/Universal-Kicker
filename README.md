@@ -16,3 +16,10 @@ Kicks **ALL** users that are in a specific role/group!
 
 Requirements:
 Python and smool brain to enter guild id/bot token.
+
+Install:
+python -m pip install -U hikari
+pip install hikari-lightbulb
+
+Run:
+python bot.py
