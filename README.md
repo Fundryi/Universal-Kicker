@@ -18,8 +18,8 @@ Requirements:
 Python and smool brain to enter guild id/bot token.
 
 Install:
-python -m pip install -U hikari
-pip install hikari-lightbulb
+- python -m pip install -U hikari
+- pip install hikari-lightbulb
 
 Run:
-python bot.py
+- python bot.py
