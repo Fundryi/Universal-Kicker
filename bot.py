@@ -42,8 +42,8 @@ async def MassKick(ctx):
 
             await ctx.respond(f'The User {memberID} is being kicked because he is in the role {kickedRole}! | {userRoleAmount} left to kick')
             time.sleep(2)
-        else:
-             await ctx.respond(f'No one left to kick in the {kickedRole} role!')  
-        break
+        #else:
+        #   await ctx.respond(f'No one left to kick in the {kickedRole} role!')  
+        #break
 
 bot.run()
